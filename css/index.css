@@ -1,0 +1,211 @@
+*{
+	padding:0;
+	margin:0;
+	point-sizing: border-point;
+}
+
+body {
+  justify-content: center;
+}
+
+body .home-top{
+  background-color: rgb(237, 210, 174);
+  color: rgb(160, 80, 29);
+  font-family: 'Montserrat', sans-serif;
+
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(to bottom, rgb(24, 16, 61), rgb(31, 16, 25)); */
+  /* background-image: url("../img/background.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 5%; */
+  
+  background-image: url("../img/flower.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+
+  position: absolute;
+  transition: .2s;
+  overflow: hidden;
+}
+
+body .home-top .welcome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 40%;
+  border: solid 7px hsla(0, 0%, 100%, 0.2);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  box-shadow:    
+  0px -10px 10px 5px #f2c8a7,   /*上边阴影  红色*/
+
+  -10px 0px 10px 5px #f1aba6,   /*左边阴影  绿色*/
+
+  10px 0px 10px 5px #f9d0e1,    /*右边阴影  蓝色*/
+
+  0px 10px 10px 5px #f1eed0;    /*下边阴影  黄色*/
+}
+
+body .home-top .welcome h1 {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+body .home-main {
+  width: 100%;
+
+  position: relative;
+  transition: .2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(to right bottom, rgba(248, 242, 239, 0.8), rgba(222, 173, 129, 0.527), rgba(244, 233, 217, 0.6));
+  background-color: #fef7f1;
+  background-color: #faf8fc;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23c8c8c8' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+body .home-main-nav {
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  font-family: 'ZH146';
+  color: #5b1111c3;
+  font-size: 21px;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 0 10px rgba(84, 43, 43, 0.5);
+
+  background: linear-gradient(to right bottom, rgba(241, 235, 235, 0.8), rgba(243, 212, 212, 0.7), rgba(255, 255, 255, 0.6));
+
+}
+
+body .home-main-nav .logo {
+  height: 100%;
+  position: absolute;
+  left: 5%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+body .home-main-nav .logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+body .home-main-nav .logo span {
+  font: 100 32px 'ZH146';
+  letter-spacing: 2px;
+}
+
+body .home-main-nav ul {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  list-style-type: none;
+}
+
+body .home-main-nav ul .nav-point {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 112px;
+  height: 5px;
+  border-radius: 3px;
+  z-index: -999;
+  transition: .5s;
+}
+
+body .home-main-nav ul li {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+body .home-main-nav ul li a {
+  color: #10041f;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: #291212cd;
+}
+
+#nav-cli  li  a {
+  line-height: 5vh;
+}
+
+body .home-main-nav ul li ul {
+  text-align: center;
+  display: none;
+  /* display: block; */
+  width: 88%;
+  height: auto;
+  position: absolute;
+  border-bottom: 0.6vh dashed rgb(203, 157, 157);
+  border-radius: 3vh;
+  background-color: #f6dada18;
+}
+
+body .home-main-nav ul li ul li {
+  display: block;
+  text-align: center;
+}
+
+body .home-main-nav ul li:hover ul {
+  display: block;
+}
+
+body .home-main-nav ul li:nth-child(1):hover~.nav-point {
+  left: 0px;
+  background-color: rgba(235, 169, 55, 0.795);
+}
+
+body .home-main-nav ul li:nth-child(2):hover~.nav-point {
+  left: 120px;
+  background-color: red;
+}
+
+body .home-main-nav ul li:nth-child(3):hover~.nav-point {
+  left: 240px;
+  background-color: #8da1f8;
+}
+
+body .home-main-nav ul li:nth-child(4):hover~.nav-point {
+  left: 360px;
+  background-color: #ffb1b1;
+}
+
+body .home-main-nav ul li:nth-child(5):hover~.nav-point {
+  left: 480px;
+  background-color: #7df88e;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}

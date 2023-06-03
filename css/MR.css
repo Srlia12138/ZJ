@@ -1,0 +1,110 @@
+body {
+  /* background: linear-gradient(to right bottom, rgba(248, 242, 239, 0.8), rgba(222, 173, 129, 0.527), rgba(244, 233, 217, 0.6));
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #191f22; */
+  
+	line-height: 1.6em;
+	background-image: url("../img/cartographer.png");
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 30%;
+
+}
+
+.cel-table {
+  height: 136vh;
+  text-align: center;
+  display: inline-flex;
+  margin: auto;
+  width: 100%;
+}
+
+#one-column-emphasis
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 2vh;
+	margin: auto;
+	width: 80%;
+  margin-top: 10vh;
+	text-align: center;
+	border-collapse: collapse;
+	backdrop-filter: blur(2px);
+	font-family: 'ZH146';
+}
+#one-column-emphasis th
+{
+	font-size: 2.5vh;
+	font-weight: normal;
+	padding: 12px 15px;
+	color: #039;
+}
+#one-column-emphasis td
+{
+	padding: 10px 15px;
+	color: #669;
+	border-top: 1px solid #e8edff;
+}
+.oce-first
+{
+	background: #d0dafd;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	
+}
+#one-column-emphasis tr:hover td
+{
+	color: #339;
+	background: #eff2ff;
+}
+
+.more {
+	display: inline-flex;
+	height: 20vh;
+	align-items: center;
+}
+
+.visit {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+	left: 0;
+	right: 0;
+	width: 30%;
+	bottom: -50vh;
+	margin: auto;
+}
+
+.visit:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.visit::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.visit:hover::before {
+  width: 250%;
+}

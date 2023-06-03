@@ -1,0 +1,144 @@
+*{
+	padding:0;
+	margin:0;
+	point-sizing: border-point;
+}
+
+body {
+  background: linear-gradient(to right bottom, rgba(248, 242, 239, 0.8), rgba(222, 173, 129, 0.527), rgba(244, 233, 217, 0.6));
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #191f22;
+}
+
+.extra-text {
+  text-align: center;
+  margin-bottom: 20vh;
+  margin-top: 10vh;
+  font-size: 50px;
+  font-family: 'ZH39';
+  /* display: inline-block; */
+  color: rgb(250, 242, 188);
+}
+
+body::after {
+  content: "";
+  background-image: radial-gradient(#fff 2%, #fff0 10.2%);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* filter: drop-shadow(8px 8px 10px rgba(41, 29, 2, 0.577)); */
+}
+
+.home-main-works {
+  -moz-column-count: 3;
+      column-count: 3;
+  -moz-column-gap: 50px;
+      column-gap: 50px;
+  font-size: 0;
+  perspective: 50rem;
+  padding: 40px 40px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+.home-main-works img {
+  margin-bottom: 50px;
+  border-radius: 36px;
+}
+
+.home-main-works img:hover {
+  transform: rotate(6deg);
+}
+
+
+/* .drawing{
+  width: 150px;
+  margin: 10px;
+} */
+.drawing:hover{
+  cursor: zoom-in;
+}
+.wrapper{
+  position: fixed;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(52, 52, 52, 0.8);
+  background-size: 35%;
+}
+.wrapper:hover{
+  cursor: zoom-out;
+}
+
+.cta {
+  border: none;
+  background: none;
+  float: right;
+  top: -30vh;
+  right: 25vh;
+  position: relative;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 5vh;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
